@@ -100,6 +100,9 @@ text-align: center;
         border-radius: 5px;
 				outline: none;
       }
+.fa-link{
+      	transform: rotate(-40deg);
+      }
 .fa-fa-search{
 			background-color: transparent;
 		}
@@ -113,3 +116,54 @@ text-align: center;
 			font-family: 'MMM';
 			box-shadow: none;
     }
+
+    		.sect2-h1{
+    			font-family: 'MMM';
+    			font-weight: 200;
+    			margin-left: 10%;
+    		}
+    		.nav-link:active{
+    			background-color: #000;
+    		}
+
+    .fa-upload{
+    	position: relative;
+    }
+    .material-icons{
+    	position: relative;
+    }
+    .fa-pencils-square-o{
+    	position: relative;
+    }
+    .fa-trash-0{
+    	position: absolute;
+    }
+        #custom-search-input button {
+            border: 0;
+            background: none;
+            padding: 2px 5px;
+            margin-top: 2px;
+            position: relative;
+            left: -28px;
+            margin-bottom: 0;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+        }
+
+        .search-query:focus + button {
+            z-index: 3;
+        }
+    		.btn-outline-secondary:hover{
+    			background-color: rgba(0, 0, 0, 0.5);
+    		}
+    		.dropLogo{
+    			height: 70px;
+    			width: 70px;
+    			text-align: center;
+    		}
+    		.thumbnail {
+        position:relative;
+        overflow:hidden;
+
+    }    
