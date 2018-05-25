@@ -1,0 +1,88 @@
+.wrapper{
+	-webkit-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	padding-left: 250px;
+transition: all 0.4s ease 0s;
+}
+.sidebar-content{
+  margin-left: -250px;
+  left: 250px;
+  width: 250px;
+  background: #153a72;
+  position: fixed;
+  height: 100%;
+  overflow-y: hidden;
+	overflow-x: hidden;
+  z-index: 1000;
+  transition: all 0.4s ease 0s;
+}
+.btn{
+	border: none;
+}
+.sidebar-nav{
+	position: absolute;
+  top: 0;
+  width: 250px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+	left: 20px;
+
+}
+.progress{
+	position: absolute;
+	top: 80%;
+	width: 200px;
+	margin-left: 30px;
+	height: 0.9%;
+}
+.progress-pane{
+	position: absolute;
+	top: 76%;
+	color: #fff;
+	font-size: 12px;
+	width: 200px;
+	margin-left: 30px;
+	height: 0.9%;
+}
+.bottom-pane {
+	top: 90%;
+	position: absolute;
+}
+.btn-info{
+	background-color: inherit;
+	border: #6a7eff;
+	border: 2px;
+}
+.progress-bar{
+	top: 80%;
+	width: 250px;
+	margin-right: 15px;
+}
+.sidebar-nav > li{
+	line-height: 40px;
+	text-decoration: none;
+
+}
+.sidebar-nav > li > a{
+	display: block;
+	font-family: 'MMA';
+	text-decoration: none;
+	color: #999999;
+	font-size: 24px;
+}
+.sidebar-nav > li > a:hover{
+	text-decoration: none;
+	color: #fff;
+	background: inherit;
+}
+.sidebar-nav > .logo-brand{
+height: 70px;
+margin-bottom: 20px;
+text-align: center;
+}
+.dropLogo{
+  height: 70px;
+  width: 70px;
+  text-align: center;
+}
