@@ -64,25 +64,31 @@ transition: all 0.4s ease 0s;
 	text-decoration: none;
 
 }
-.sidebar-nav > li > a{
-	display: block;
-	font-family: 'MMA';
-	text-decoration: none;
-	color: #999999;
-	font-size: 24px;
-}
-.sidebar-nav > li > a:hover{
-	text-decoration: none;
-	color: #fff;
-	background: inherit;
-}
-.sidebar-nav > .logo-brand{
-height: 70px;
-margin-bottom: 20px;
-text-align: center;
-}
-.dropLogo{
-  height: 70px;
-  width: 70px;
-  text-align: center;
-}
+
+#custom-search-input {
+        margin:0;
+        margin-top: 10px;
+        padding: 0;
+				opacity: 0.5;
+      }
+#custom-search-input .search-query {
+        padding:0px;
+        margin-bottom: 0;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 5px;
+				outline: none;
+      }
+.fa-fa-search{
+			background-color: transparent;
+		}
+#search .form-control{
+			outline: none;
+			background-color: transparent;
+			border: 0px solid;
+			height: 30px;
+			width: 160px;
+		  color: #000;
+			font-family: 'MMM';
+			box-shadow: none;
+    }
