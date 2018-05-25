@@ -38,16 +38,14 @@ $("#loginbtn").click(function() {
 var name = $("#username").val();
 var email = $("#userEmail").val();
 var newUserDetails=new userDetails(name,email);
-if(username=" " || userEmail==""){
-  alert("Fields with * are required");
-}
-else {
+if (name == "" || email == ""){
+alert("Please fill all required fields!");
+}else{
   $("#logindiv").css("display", "none");
   $("#toggleUname").append('<i class="fa fa-bell-o">'+'&nbsp;&nbsp;&nbsp;'+newUserDetails.name+"&nbsp;&nbsp;&nbsp;"+'<i class="fa fa-sort-down showEmail">'+'</i>');
   $("#toggleUname").click(function(){
     $("#userMail").text(newUserDetails.email);
   });
 }
-
 });
 });
