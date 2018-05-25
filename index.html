@@ -12,12 +12,13 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
   </head>
   <body>
     <div class="wrapper">
       <nav class="sidebar-content">
         <ul class="sidebar-nav">
-          <li class="logo-brand">
+          <li class="navbar-brand">
             <a href="#home">
               <img class="dropLogo justify-content-center" src="images/dlogo.png">
             </a>
@@ -106,17 +107,24 @@
             </span>
           </div>
           <div class="col-md-6">
-            <ul class="nav   nav-pills mb-3 float-right">
-              <li class="nav-item">
-                <a class="nav-link active bg-dark" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Size</a>
-              </li>
+            <nav class="navbar navbar-expand-lg navbar-light float-right">
+            <button type="button" class="navbar-toggler" data-toggle="collapse" aria-controls="secondaryNav" aria-expanded="false" aria-label="Toggle navigation" data-target="#secondaryNav" name="button">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="secondaryNav">
+              <ul class=" navbar-nav nav nav-pills float-right" >
                 <li class="nav-item">
-                  <a class="nav-link" href="#">Modified</a>
+                  <a class="nav-link active bg-dark" href="#">Home</a>
                 </li>
-              </ul>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Size</a>
+                </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Modified</a>
+                  </li>
+                </ul>
+            </div>
+          </nav>
             </div>
           </div>
           <hr>
@@ -264,23 +272,21 @@
     </div>
   </div>
   <div id="logindiv">
-<form class="form" action="#" id="login">
-<h3>Login</h3>
-<hr/><br/>
-<label class="label">Username : </label>
-<div class="form-group">
-	<input type="text" class="form-control" id="username" placeholder="Username"/>
-</div>
-<label class="label">Email : </label>
-<div class="form-group">
-	<input type="email" class="form-control" id="userEmail" placeholder="Email"/>
-
-</div>
-<input type="button" id="loginbtn" value="Login"/>
-<br/>
-
-</form>
-</div>
+    <form class="form" action="#" id="login">
+      <h3>Login</h3>
+      <hr/><br/>
+      <label class="label">Username : </label>
+      <div class="form-group">
+        <input type="text" class="form-control" id="username" placeholder="Username"/>
+      </div>
+      <label class="label">Email : </label>
+      <div class="form-group">
+        <input type="email" class="form-control" id="userEmail" placeholder="Email"/>
+      </div>
+      <input type="button" id="loginbtn" value="Login"/>
+      <br/>
+    </form>
   </div>
+</div>
 </body>
 </html>
