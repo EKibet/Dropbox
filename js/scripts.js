@@ -1,3 +1,4 @@
+//Business logic
 function userDetails(firstName,email){
   this.name=firstName;
   this.email=email;
@@ -16,12 +17,11 @@ $("#logindiv").css("display", "block");
 }
 $('.thumbnail').hover(
     function(){
-        $(this).find('.hoverOn').slideDown(250); //.fadeIn(250)
+        $(this).find('.hoverOn').slideDown(250);
     },
     function(){
-        $(this).find('.hoverOn').slideUp(250); //.fadeOut(205)
+        $(this).find('.hoverOn').slideUp(250);
     }
-
   );
 $(".list-inline-item").hover(
     function(){
@@ -34,16 +34,20 @@ $(".list-inline-item").hover(
   $(function () {
   $('[data-toggle="tooltip"]').tooltip()
 });
-// Login form popup login-button click event.
 $("#loginbtn").click(function() {
 var name = $("#username").val();
 var email = $("#userEmail").val();
 var newUserDetails=new userDetails(name,email);
+if(username=" " || userEmail==""){
+  alert("Fields with * are required");
+}
+else {
+  $("#logindiv").css("display", "none");
+  $("#toggleUname").append('<i class="fa fa-bell-o">'+'&nbsp;&nbsp;&nbsp;'+newUserDetails.name+"&nbsp;&nbsp;&nbsp;"+'<i class="fa fa-sort-down showEmail">'+'</i>');
+  $("#toggleUname").click(function(){
+    $("#userMail").text(newUserDetails.email);
+  });
+}
 
-$("#logindiv").css("display", "none");
-$("#toggleUname").append('<i class="fa fa-bell-o">'+'&nbsp;&nbsp;&nbsp;'+newUserDetails.name+"&nbsp;&nbsp;&nbsp;"+'<i class="fa fa-sort-down showEmail">'+'</i>');
-$("#toggleUname").click(function(){
-  $("#userMail").text(newUserDetails.email);
-});
 });
 });
