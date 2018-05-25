@@ -7,7 +7,9 @@ This is a web page built from a mockup image shown below.
 
 1. Git clone this repository from [https://github.com/detectiveyego/Dropbox.git](Dropbox).
 2. Open the index.html file with the browser of your choice.
-|  Behaviour  |  input  |  output  |
+## Specifications
+
+| Behavior        | Input           | Outcome  |
 | ------------- |:-------------:| -----:|
 |  log in form pops up when the page loads  |  User Enters Username and Email(**Required**)  |  Photos page opens  |  
 |  Username displayed on the right side  |  Click on the Username  |  User email drops down  |
